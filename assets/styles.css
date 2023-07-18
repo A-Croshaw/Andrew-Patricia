@@ -1,9 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&family=Slabo+27px&display=swap");
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+.image-hero p,
+a,
+h1,
+h2,
+h3 {
+  font-family: Prata, sans-serif;
+}
+
+h2{
+    font-size: 100px;
+}
 nav{
     background-color: #ff000085;
 }
@@ -97,11 +118,13 @@ a{
         right: 0;
     }
 }
+
 .box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
 .outer-hero {
     width: 100%;
     overflow: hidden;
@@ -110,22 +133,27 @@ a{
   .image-hero {
     width: 100%;
     height: 600px;
-    text-align: center;
     background: url(../assets/img/header-bga.jpg) no-repeat center;
-
   }
   
   .text-hero {
-    margin: 2px;
-    max-width: 200px;
-    font-size:  90%;
-    font-weight: 700;
+    padding: 5px;
+    font-size:  35px;
+    font-weight: 400;
     min-height: 30px;
-    line-height: 30px;
-    text-align: center;
+    line-height: 45px;
+    background-color: rgba(51, 51, 51, 0.842);
     text-transform: uppercase;
-    color: #000000;
+    color: #ff0404;
     letter-spacing: 3px;
+  }
+  .text-herop{
+    padding: 5px;
+    font-size: 25px;
+    color: #c00000;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.842);
+
   }
   
   .align-box-center {
@@ -137,6 +165,12 @@ a{
     justify-content: space-around;
     align-items: flex-end;
   }
-  @media(min-width: 768px) {
 
+  .flexstart{
+    align-items: flex-start;
+  }
+
+  .alignmiddlebottom{
+    flex-direction: column-reverse;
+    justify-content: space-between;
   }
