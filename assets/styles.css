@@ -150,7 +150,7 @@ section {
 form{
     flex-wrap: wrap;
     flex: auto;
-    max-width: 500px;
+    max-width: 600px;
     line-height: 35px;
     letter-spacing: 1px;
     font-weight: 600;
@@ -191,10 +191,10 @@ form{
 }
   
   .label1{
-    width: 65px
+    min-width: 65px
   }
   .label2{
-    width: 120px
+    min-width: 120px
   }
 
   .rsvpselect{
