@@ -1,12 +1,15 @@
-const dropMenu = document.querySelector(".drop-menu");
-const navMenu = document.querySelector(".nav-menu");
 
-dropMenu.addEventListener("click", () => {
-    dropMenu.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    dropMenu.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
+function sendMail(contactForm) {
+    emailjs.send("service_dmoely6","andrew",{
+        "project_request": contactForm.projectsummary.value,
+        "from_name": contactForm.name.value,
+        "from_email": contactForm.emailaddress.value
+    })
+    .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+        console.log('FAILED...', error);
+    });
+return false;  // To block from loading a new page
+}
