@@ -172,8 +172,12 @@ form{
     flex: auto;
     max-width: 600px;
     border-radius: 15px;
+    
   }
   
+  .formbox{
+    padding-top: 25px;
+  }
 .labeltext{
   line-height: 25px;
   letter-spacing: 1px;
@@ -234,7 +238,10 @@ form{
     justify-content: center;
     margin-top: 10px;
   }
-  
+  .text{
+    padding-top: 10px;
+  }
+
   .outer-hero2 {
     margin-top: 10px;
     width: 100%;
