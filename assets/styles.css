@@ -49,6 +49,13 @@ nav a {
     flex-wrap: wrap;
     
 }
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
 section {
     background-color: #f8e3c6;
     padding-bottom: 20px;
@@ -57,7 +64,6 @@ section {
     margin-top: 50px;
     width: 100%;
     overflow: hidden;
-    
   }
   
   .image-hero {
@@ -94,6 +100,20 @@ section {
   .align-box-center {
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  .align-box-center1 {
+    justify-content: center;
+  }
+
+  .justifyleft {
+    padding-top: 5px;
+    align-items: flex-start;
+    gap:15px;
+  }
+
+  .justifyright {
+    gap:7px;
   }
 
   .align-bottom-spaced {
@@ -151,15 +171,19 @@ form{
     flex-wrap: wrap;
     flex: auto;
     max-width: 600px;
-    line-height: 35px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 110%;
-    padding: 20px 25px 20px 25px;
-    margin: 30px 0;
     border-radius: 15px;
   }
   
+.labeltext{
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 110%;
+  text-align:center;
+  margin: 4px;
+  padding-top: 2px;
+}
+
   .form-message{
     resize: none;
     height: 80px;
@@ -173,8 +197,15 @@ form{
     height: 25px;
     width: 200px;
     border-radius: 5px;
+    margin-top: 2px;
   }
     
+  .input-check {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    margin-top: 4px
+  }
   .contact-button {
     padding: 10px;
     border-radius: 10px;
@@ -189,15 +220,8 @@ form{
   .contact-button:hover{
     color:rgb(193, 116, 255);
 }
-  
-  .label1{
-    min-width: 65px
-  }
-  .label2{
-    min-width: 120px
-  }
 
-  .rsvpselect{
+.rsvpselect{
     justify-content: left;
     padding-left: 60px;
   }
@@ -210,4 +234,9 @@ form{
     justify-content: center;
     margin-top: 10px;
   }
-  /*-----contact page end----*/
+  
+  .outer-hero2 {
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+  }

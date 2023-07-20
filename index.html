@@ -24,6 +24,7 @@
             <p class="nav-branding box align-box-center">Patricia & Andrew's Wedding</p>
         <nav class="navbar">
             <ul class="box align-box-center">
+                <li class="nav-item"><a class="nav-link"><a href="index.html" class="active">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#ourstory">Our Story</a></li>
                 <li class="nav-item"><a class="nav-link" href="#scheule">Schedule</a></li>
                 <li class="nav-item"><a class="nav-link" href="#info">Information</a></li>
@@ -87,32 +88,28 @@
         </div>
         <div class="box align-box-center">
             <form onsubmit="return sendMail(this);" class="alignmiddlebottom">
-                <div class="box align-box-center ">
-                    <label for="guest1" class="label1">Guest 1</label>
-                    <input type="text" name="guest1" class="input-field" id="guest1" placeholder="Guest 1" required />
-                </div>
-                <div class="box align-box-center ">
-                    <label for="emailaddress" class="label1">Guest 2</label>
-                    <input type="text" name="guest2" class="input-field" id="guest2" placeholder="Guest 2" required />
-                </div>
-                <div class="box align-box-center">
-                    <label for="emailaddress" class="label1">Email</label>
-                    <input type="email" name="emailaddress" class="input-field" id="emailaddress" placeholder="Email Address" required />
-                </div>
-                <div class="box rsvpselect">
-                    <label for="rsvpYes" class="label2">Attending</label>
-                    <input class="rsvpyn" type="radio" id="rsvpYes" name="rsvpYes" value="RSVP Yes">
-                </div>
-                <div class="box rsvpselect">
-                    <label for="rsvpNo" class="label2">Not Attending</label>
-                    <input class="rsvpyn" type="radio" id="rsvpNo" name="rsvpYes" value="RSVP No">
+                <div class="box align-box-center1">
+                    <div class="box2 justifyright">
+                        <label for="guest1" class="labeltext">Guest 1</label>
+                        <label for="emailaddress" class="labeltext">Guest 2</label>
+                        <label for="emailaddress" class="labeltext">Email</label>
+                        <label for="rsvpYes" class="labeltext">Attending</label>
+                        <label for="rsvpNo" class="labeltext">Not Attending</label>
+                    </div>
+                    <div class="box2 justifyleft">
+                        <input type="text" name="guest1" class="input-field" id="guest1" placeholder="Guest 1" required />
+                        <input type="text" name="guest2" class="input-field" id="guest2" placeholder="Guest 2" required />
+                        <input type="email" name="emailaddress" class="input-field" id="emailaddress" placeholder="Email Address" required />
+                        <input type="checkbox" name="rsvp" value="rsvpYes" id="rsvpYes" class="input-check">
+                        <input type="checkbox" name="rsvp" value="No" id="rsvpNo" class="input-check">
+                    </div>
                 </div>
                 <div class="box align-box-center">
                     <p>Addiontional Information please comment below.</p>
-                    <textarea rows="5" name="extrainfo" class="form-message" id="projectsummary" placeholder="Extra Informoation"></textarea>
+                    <textarea rows="5" name="extrainfo" class="form-message" id="additional" placeholder="Extra Informoation"></textarea>
                 </div>
                 <div class="box button">
-                    <button type="submit" class="contact-button" value="Send" formaction="thankyou.html">RSVP</button>
+                    <button type="submit" class="contact-button" value="Send">RSVP</button>
                 </div>
             </form>
         </div>
