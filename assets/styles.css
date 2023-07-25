@@ -129,7 +129,7 @@ section {
   .alignmiddle{
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
   }
   .rsvp-btn {
     padding: 10px;
@@ -292,7 +292,7 @@ form{
   flex-wrap: wrap;
   align-items: center;
   padding: 10px;
-  color: #f8df00;
+  color: #fffb00;
   background: url(../assets/img/door.webp) no-repeat center;
   position: fixed;
   flex: 100%;
