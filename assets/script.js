@@ -31,7 +31,7 @@ return false;  // To block from loading a new page
 document.getElementById('correct').addEventListener('click', correct);
 document.getElementById('incorrect').addEventListener('click', incorrect);
 
-let element = document.querySelector('.game-rules'); 
+let element = document.querySelector('#game-rules'); 
 function fadeOut(el) {
    let opacity = 1; // Initial opacity
   let interval = setInterval(function() {
@@ -42,7 +42,7 @@ function fadeOut(el) {
          clearInterval(interval); // Stop the interval when opacity reaches 0
          el.style.display = 'none'; // Hide the element
       }
-   }, 50);
+   }, 40);
 }
 
 
