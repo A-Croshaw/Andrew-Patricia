@@ -281,3 +281,26 @@ form{
   font-size: 20px;
   padding-top: 15px;
 }
+
+.game-rules {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  color: #f8df00;
+  background: url(../assets/img/door.webp) no-repeat center;
+  position: absolute;
+  flex: 100%;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+.game-rules h2 {
+  font-size: 20px;
+  line-height: 27px;
+  background-color: #00000000;
+}

@@ -27,3 +27,59 @@ function sendMail(contactForm) {
     });
 return false;  // To block from loading a new page
 }
+
+document.getElementById('correct').addEventListener('click', correct);
+document.getElementById('incorrect').addEventListener('click', incorrect);
+
+let element = document.querySelector('.game-rules'); 
+function fadeOut(el) {
+   let opacity = 1; // Initial opacity
+  let interval = setInterval(function() {
+      if (opacity > 0) {
+         opacity -= 0.02;
+         el.style.opacity = opacity;
+      } else {
+         clearInterval(interval); // Stop the interval when opacity reaches 0
+         el.style.display = 'none'; // Hide the element
+      }
+   }, 50);
+}
+
+
+function correct() {
+    fadeOut(element);
+    document.getElementById("navbar").style.visibility = 'visible';
+    enableScroll()
+}
+function incorrect() {
+    document.getElementById('text-1').innerText = "Incorrect Try Again";
+}
+pageLoad()
+
+function pageLoad(){
+    document.getElementById("navbar").style.visibility = 'hidden';
+    disableScroll()
+
+}
+
+
+
+function disableScroll() {
+    // Get the current page scroll position in the vertical direction
+   let scrollTop =
+       window.pageYOffset || document.documentElement.scrollTop;
+           
+// Get the current page scroll position in the horizontal direction 
+ let scrollLeft =
+   window.pageXOffset || document.documentElement.scrollLeft;
+   
+  // if any scroll is attempted,
+ // set this to the previous value
+ window.onscroll = function() {
+  window.scrollTo(scrollLeft, scrollTop);
+ };
+}
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
