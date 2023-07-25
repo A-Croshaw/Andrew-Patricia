@@ -287,10 +287,9 @@ form{
   flex-wrap: wrap;
   align-items: center;
   padding: 10px;
-  margin: 5px;
   color: #f8df00;
   background: url(../assets/img/door.webp) no-repeat center;
-  position: absolute;
+  position: fixed;
   flex: 100%;
   overflow: hidden;
   top: 0;
@@ -303,4 +302,10 @@ form{
   font-size: 20px;
   line-height: 27px;
   background-color: #00000000;
+}
+
+.riddle{
+  font-size: 30px;
+  width: 25%;
+  text-align: center;
 }
