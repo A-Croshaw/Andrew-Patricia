@@ -83,3 +83,10 @@ function disableScroll() {
 function enableScroll() {
     window.onscroll = function() {};
 }
+
+let ele = document.querySelector(".door");
+ele.addEventListener("click", toggleDoor);
+
+function toggleDoor() {
+  ele.classList.toggle("doorOpen");
+}
