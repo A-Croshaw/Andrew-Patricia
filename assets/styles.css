@@ -126,6 +126,11 @@ section {
     justify-content: space-between;
   }
 
+  .alignmiddle{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
   .rsvp-btn {
     padding: 10px;
     border-radius: 10px;
@@ -282,7 +287,7 @@ form{
   padding-top: 15px;
 }
 
-.game-rules {
+.riddles {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -298,10 +303,15 @@ form{
   background-color: #000000;
 }
 
-.game-rules h2 {
-  font-size: 20px;
-  line-height: 27px;
+.riddless{
+  width: 100%;
+}
+
+.riddleh2 {
+  font-size: 35px;
+  letter-spacing: 1px;
   background-color: #00000000;
+  text-align: center;
 }
 
 .riddle{
