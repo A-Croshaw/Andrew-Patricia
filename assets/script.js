@@ -42,7 +42,7 @@ function fadeOut(el) {
          clearInterval(interval); // Stop the interval when opacity reaches 0
          el.style.display = 'none'; // Hide the element
       }
-   }, 40);
+   }, 100);
 }
 
 
