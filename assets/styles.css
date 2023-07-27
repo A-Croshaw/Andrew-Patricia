@@ -317,11 +317,14 @@ form{
 
 
 .riddleh2 {
-  font-size: 35px;
+  font-size: 33px;
   letter-spacing: 1px;
   background-color: #00000000;
   text-align: center;
   max-width: 220px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .riddle{
@@ -330,4 +333,8 @@ form{
   text-align: center;
 }
 
+.riddless{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
