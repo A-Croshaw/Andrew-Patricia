@@ -291,6 +291,9 @@ form{
   padding-top: 15px;
 }
 
+.info1{
+  padding: 20px;
+}
 .riddles {
   flex-direction: column;
   flex-wrap: wrap;
