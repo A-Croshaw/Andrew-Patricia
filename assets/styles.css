@@ -306,13 +306,19 @@ form{
   height: 100%;
   background-color: #000000;
 }
+@media screen and (min-width: 450px) {
+  .riddleh2 {
+    max-width: 280px;
+  }
+}
+
 
 .riddleh2 {
   font-size: 35px;
   letter-spacing: 1px;
   background-color: #00000000;
   text-align: center;
-  max-width: 280px;
+  max-width: 220px;
 }
 
 .riddle{
