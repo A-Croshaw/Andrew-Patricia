@@ -335,4 +335,22 @@ form{
 
 .ridbtn{
   padding-bottom: 30px;
+  gap:40px
+}
+
+.riddbtn {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #3b3b39;
+  color: #fafafa;
+  border-style: groove;
+  transition: 0.7s ease;
+  margin-top: 15px;
+  width:100px;
+}
+
+.riddbtn:hover{
+  color:rgb(193, 116, 255);
 }
