@@ -1,5 +1,5 @@
 let rsvp
-
+disableScroll()
 const btn = document.querySelector('.contact-button');
         btn.addEventListener('click', (event) => {
             let checkboxes = document.querySelectorAll('input[name="rsvp"]:checked');
@@ -42,26 +42,34 @@ function fadeOut(el) {
          clearInterval(interval); // Stop the interval when opacity reaches 0
          el.style.display = 'none'; // Hide the element
       }
-   }, 100);
+   }, 70);
 }
 
+let navbarfade = document.querySelector('#navbar'); 
+function fadeIn(els) {
+    
+   let opacity = 0; // Initial opacity
+  let interval = setInterval(function() {
+      if (opacity < 1) {
+         opacity += 0.015;
+         els.style.opacity = opacity;
+      } else {
+         clearInterval(interval); // Stop the interval when opacity reaches 0
+      }
+   }, 70);
+   document.getElementById("navbar").style.visibility = 'visible';
+}
 
 function correct() {
+    fadeIn(navbarfade)
     fadeOut(element);
-    document.getElementById("navbar").style.visibility = 'visible';
+    
+
     enableScroll()
 }
 function incorrect() {
     document.getElementById('text-1').innerText = "Incorrect Try Again";
 }
-pageLoad()
-
-function pageLoad(){
-    document.getElementById("navbar").style.visibility = 'hidden';
-    disableScroll()
-
-}
-
 
 
 function disableScroll() {
