@@ -42,7 +42,7 @@ function fadeOut(el) {
          clearInterval(interval); // Stop the interval when opacity reaches 0
          el.style.display = 'none'; // Hide the element
       }
-   }, 70);
+   }, 40);
 }
 
 let navbarfade = document.querySelector('#navbar'); 
@@ -56,7 +56,7 @@ function fadeIn(els) {
       } else {
          clearInterval(interval); // Stop the interval when opacity reaches 0
       }
-   }, 70);
+   }, 40);
    document.getElementById("navbar").style.visibility = 'visible';
 }
 
